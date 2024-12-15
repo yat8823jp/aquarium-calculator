@@ -4,34 +4,55 @@ body {
 	min-width: 375px;
 	overflow-x: hidden;
 	font-family: "Noto Sans JP", sans-serif;
+	background: rgb(188, 232, 250);
 	header {
 		font-family: "Josefin Sans", serif;
+		text-align: center;
+		margin-block: 32px;
 	}
-	header,
-	main {
+	> main {
+		display: grid;
+		place-content: center;
+	}
+	> header,
+	> main {
 		padding-inline: 10px;
 		margin-inline: auto;
-		display: block;
-
 		@media screen and ( min-width: 600px ) {
-			width: 50%;
 		}
 		.number {
-			width: 32px;
+			width: 48px;
 			margin-inline: 8px;
 			padding: 4px 8px;
 			font-size: 16px;
 		}
 		.result {
+			font-size: 24px;
 			font-weight: bold;
 			margin-inline: auto 0;
 		}
 		.reset {
 			padding: 4px 8px;
+			margin-left: 24px;
 			font-size: 16px;
+			display: block;
+			font-size: 14px;
+			font-weight: bold;
+			text-align: center;
+			text-decoration: none;
+			padding: 8px 16px;
+			border: 0;
 			border-radius: 4px;
+			border-bottom: 4px solid #0686b2;
+			background-color: #27acd9;
+			color: #fff;
+			&:hover,
+			&:active {
+				margin-top: 3px;
+				border-bottom: 1px solid #0686b2;
+				color: #fff;
+			}
 			@media screen and ( min-width: 600px ) {
-				margin-left: 40px;
 			}
 		}
 	}
@@ -42,7 +63,7 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	@media screen and ( min-width: 600px ) {
-		justify-content:left;
+		justify-content: center;
 	}
 
 }
@@ -53,5 +74,12 @@ body {
 	grid-template-columns: 200px 1fr;
 	> .first {
 		margin-left: 16px;
+		line-height: 48px;
+	}
+	dt {
+		text-align: right;
+	}
+	dd {
+		text-align: left;
 	}
 }
