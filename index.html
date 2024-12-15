@@ -11,30 +11,35 @@
 <body>
 	<header role="banner">
 		<h1>Aquarium calculator</h1>
-	</header>
-	<main>
-		<header class="flex">
+		<article class="flex">
 			<div class="group">
 				<label for="number">作る水の量を入力
 				<input type="number" id="makewater" class="number"> L</label>
 			</div>
 			<input type="reset" class="reset">
-		</header>
+		</article>
+	</header>
+	<main>
 		<article class="contents">
-			<dl class="contents__data grid">
-				<dt class="first">カルキぬきの量:</dt>
+			<dl id="items" class="contents__data grid">
+				<dt class="first">カルキぬき:</dt>
 				<dd><span id="result-chalk" class="result"></span> ml</dd>
-				<dt class="first">zicra BENISSIM の量:</dt>
+				<dt class="first">zicra BENISSIM:</dt>
 				<dd><span id="result-zicra-benissim" class="result"></span> ml</dd>
-				<dt class="first">Tecra CO<sub>2</sub>Plus の量:</dt>
+				<dt class="first">Tecra CO<sub>2</sub>Plus:</dt>
 				<dd><span id="result-tetra-co2plus" class="result"></span> ml</dd>
-				<dt class="first">WATER SUPPLE の量:</dt>
+				<dt class="first">WATER SUPPLE:</dt>
 				<dd><span id="result-water-supple" class="result"></span> ml</dd>
-				<dt class="first">グリーンF<br>コールドリキッド の量:</dt>
-				<dd><span id="result-green-f-cold-liquid" class="result"></span> ml</dd>
+				<dt class="first">グリーンF<br>ゴールドリキッド:</dt>
+				<dd><span id="result-green-f-gold-liquid" class="result"></span> ml</dd>
+				<dt class="first">エーハイム 4 in 1:</dt>
+				<dd><span id="result-eheim-4-in-1" class="result"></span> ml</dd>
 			</dl>
 		</article>
 	</main>
+	<footer>
+		<p>&copy; 2024 YAT</p>
+	</footer>
 	<script src="./js/main.js"></script>
 </body>
 </html>
