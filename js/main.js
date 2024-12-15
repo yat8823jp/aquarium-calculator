@@ -6,6 +6,8 @@ const resultsBoxies = {
 	"chalk": document.getElementById( 'result-chalk' ),
 	"zicra-benissim": document.getElementById( 'result-zicra-benissim' ),
 	"tetra-co2plus": document.getElementById( 'result-tetra-co2plus' ),
+	"water-supple": document.getElementById( 'result-water-supple' ),
+	"green-f-cold-liquid": document.getElementById( 'result-green-f-cold-liquid' ),
 }
 
 makeWater.addEventListener( 'input', () => {

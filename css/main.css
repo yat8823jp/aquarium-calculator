@@ -1,23 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+JP:wght@100..900&display=swap');
 
 body {
-	min-width: 375px;
-	overflow-x: hidden;
+	min-width: 320px;
+	overflow: hidden;
 	font-family: "Noto Sans JP", sans-serif;
 	background: rgb(188, 232, 250);
-	header {
+	box-sizing: border-box;
+	> header {
 		font-family: "Josefin Sans", serif;
 		text-align: center;
 		margin-block: 32px;
 	}
 	> main {
 		display: grid;
-		place-content: center;
+		height: 100vh;
+		place-content: start center;
+		> header {
+			padding: 0 16px;
+			> .group {
+				line-height: 32px;
+				label {
+					font-weight: bold;
+				}
+			}
+		}
 	}
 	> header,
 	> main {
 		padding-inline: 10px;
 		margin-inline: auto;
+		padding: 0 16px;
 		@media screen and ( min-width: 600px ) {
 		}
 		.number {
@@ -55,31 +67,48 @@ body {
 			@media screen and ( min-width: 600px ) {
 			}
 		}
+		.contents {
+			width: 100vw;
+			padding-bottom: 128px;
+			overflow: auto;
+			display: grid;
+			place-content: start center;
+			.contents__data {
+				list-style: none;
+				@media screen and ( min-width: 600px ) {
+					width: 400px;
+				}
+				> .first {
+					margin-left: 16px;
+				}
+				dt,
+				dd {
+					padding-block: 8px
+				}
+				dt {
+					text-align: right;
+				}
+				dd {
+					text-align: left;
+				}
+			}
+		}
 	}
 }
 
 .flex {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	@media screen and ( min-width: 600px ) {
 		justify-content: center;
 	}
-
 }
 
-.list {
-	list-style: none;
+.grid {
 	display: grid;
 	grid-template-columns: 200px 1fr;
-	> .first {
-		margin-left: 16px;
-		line-height: 48px;
-	}
-	dt {
-		text-align: right;
-	}
-	dd {
-		text-align: left;
+	align-items: center;
+	@media screen and ( min-width: 600px ) {
 	}
 }

@@ -10,5 +10,13 @@
   "Tetra CO2Plus": {
     "water": 20000,
     "medicine": 2.5
+  },
+   "WATER SUPPLE": {
+    "water": 5000,
+    "medicine": 10
+  },
+  "Green F Cold Liquid": {
+    "water": 10000,
+    "medicine": 10
   }
 }
