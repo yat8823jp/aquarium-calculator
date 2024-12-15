@@ -72,6 +72,11 @@ function addImgTag( datas ) {
 			} else {
 				dt.prepend( imgElemtns );
 			}
+		} else {
+			const imgElemtns = document.createElement('img');
+			imgElemtns.src   = "./img/noimage.png";
+			imgElemtns.alt   = "no image";
+			dt.prepend( imgElemtns );
 		}
 	} );
 }
