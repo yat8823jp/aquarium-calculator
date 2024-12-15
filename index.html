@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="./img/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon180.png">
+	<link rel="stylesheet" href="./css/main.css">
+	<title>Aquarium calculator</title>
+</head>
+<body>
+	<header>
+		<h1>Aquarium calculator</h1>
+	</header>
+	<main>
+		<div id="app"></div>
+		<div class="flex">
+			<label for="number">作る水の量を入力
+			<input type="number" id="makewater" class="number"> L</label>
+			<input type="reset" class="reset">
+		</div>
+		<dl class="list">
+			<dt class="first">カルキぬきの量:</dt> <dd><span id="result-chalk" class="result"></span> ml</dd>
+			<dt class="first">zicra BENISSIM の量:</dt> <dd><span id="result-zicra-benissim" class="result"></span> ml</dd>
+			<dt class="first">Tecra CO<sub>2</sub>Plus の量:</dt> <dd><span id="result-tetra-co2plus" class="result"></span> ml</dd>
+		</dl>
+	</main>
+	<script src="./js/main.js"></script>
+</body>
+</html>

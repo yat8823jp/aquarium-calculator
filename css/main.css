@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+JP:wght@100..900&display=swap');
+
+body {
+	min-width: 375px;
+	overflow-x: hidden;
+	font-family: "Noto Sans JP", sans-serif;
+	header {
+		font-family: "Josefin Sans", serif;
+	}
+	header,
+	main {
+		padding-inline: 10px;
+		margin-inline: auto;
+		display: block;
+
+		@media screen and ( min-width: 600px ) {
+			width: 50%;
+		}
+		.number {
+			width: 32px;
+			margin-inline: 8px;
+			padding: 4px 8px;
+			font-size: 16px;
+		}
+		.result {
+			font-weight: bold;
+			margin-inline: auto 0;
+		}
+		.reset {
+			padding: 4px 8px;
+			font-size: 16px;
+			border-radius: 4px;
+			@media screen and ( min-width: 600px ) {
+				margin-left: 40px;
+			}
+		}
+	}
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	@media screen and ( min-width: 600px ) {
+		justify-content:left;
+	}
+
+}
+
+.list {
+	list-style: none;
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	> .first {
+		margin-left: 16px;
+	}
+}
