@@ -1,35 +1,41 @@
 {
   "chalk": {
+    "name": "セリア カルキ抜き",
     "water": 13000,
     "medicine": 3,
     "img": "",
     "affiliate": ""
   },
   "zicra benissim": {
+    "name": "zicra benissim 水草用 250ml",
     "water": 10000,
     "medicine": 5,
     "img": "https://m.media-amazon.com/images/I/71Xzj3kRUbS._AC_SL1500_.jpg",
     "affiliate": "https://amzn.to/4iF4ngG"
   },
   "Tetra CO2Plus": {
+    "name": "テトラ CO2 プラス",
     "water": 20000,
     "medicine": 2.5,
     "img": "https://m.media-amazon.com/images/I/811koOUNSWL._AC_SL1500_.jpg",
     "affiliate": "https://amzn.to/3OU0eHZ"
   },
   "WATER SUPPLE": {
+    "name": "ウォーターサプリ 両生類用",
     "water": 5000,
     "medicine": 10,
     "img": "https://m.media-amazon.com/images/I/71FcUibH14L._AC_SL1500_.jpg",
     "affiliate": "https://amzn.to/3BGH9G1"
   },
   "Green F Gold Liquid": {
+    "name": "ニチドウ グリーンFゴールドリキッド",
     "water": 10000,
     "medicine": 10,
     "img": "https://m.media-amazon.com/images/I/71TwbHhtIIL._AC_SL1500_.jpg",
     "affiliate": "https://amzn.to/4iDCrJR"
   },
   "EHEIM 4 in 1": {
+    "name": "エーハイム フォーインワン(4in1) ",
     "water": 10000,
     "medicine": 2,
     "img": "https://m.media-amazon.com/images/I/61H2auxcu2L._AC_SL1500_.jpg",

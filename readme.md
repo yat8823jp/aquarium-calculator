@@ -10,5 +10,8 @@
 
 == Changelog ==
 
+= 1.1.0 =
+2024.12.24 Elements creation can now be done by simply reading JSON.
+
 = 1.0.0 =
 2024.12.15 release
